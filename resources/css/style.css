@@ -40,9 +40,8 @@ header {
   z-index: 1;
   height: 4rem;
   padding: 0 1.5rem;
-  border-bottom: 1px solid black;
-  color: silver;
-  background-color: #202020
+  border-bottom: 2px solid black;
+  background-color: #0288d1;
 }
 
 header .container {
@@ -57,15 +56,12 @@ header .container {
 .logo img {
   height: 2.5rem;
   max-width: 100%;
-  color: #0288d1;
 }
 
 
 .logo-text {
   font-size: 1.4rem;
-  color: #0288d1;
 }
-
 .logo-text span:first-child {
   font-weight: bold;
   color: silver;
@@ -74,10 +70,19 @@ header .container {
 /* Navigation */
 
 nav {
-  border: 2px solid red;
   margin-right: 1.5rem;
 }
 nav li {
   display: inline;
   margin-left: 1rem;
+  padding:0.75rem;
+}
+
+nav a:hover {
+  background-color: black;
+  padding:0.75rem;
+  color: silver;
+  border-radius: 5px;
+  transition-duration: 0.75s;
+  transition-timing-function: ease-in;
 }
