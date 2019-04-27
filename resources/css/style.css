@@ -1,0 +1,67 @@
+/* Universal */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Roboto", "Oswold" sans-serif;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+}
+.container {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  border: 2px solid blue;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  height: 4rem;
+  padding: 0 1.5rem;
+  border: 3px solid black;
+}
+
+header .container {
+  box-sizing: border-box;
+  padding: 0 1.5rem;
+}
+
+.logo {
+  height: 2rem;
+}
+
+.logo img {
+  height: 2rem;
+  max-width: 100%
+}
+
+.logo-text {
+  font-size: 1.4rem;
+}
+
+/* Navigation */
+
+nav {
+  border: 2px solid red;
+}
+nav li {
+  display: inline;
+  margin-left: 1rem;
+}
