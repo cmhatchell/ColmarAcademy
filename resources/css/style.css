@@ -13,9 +13,9 @@ a {
   text-decoration: none;
 }
 .container {
-  display: flex;
   width: 100%;
   margin: 0 auto;
+  border: 1px solid red;
 }
 
 .flex-space-center{
@@ -29,6 +29,12 @@ a {
   align-items: center;
 }
 
+.column {
+width: 100%;
+display: flex;
+flex-direction: column;
+border: 1px solid blue;
+}
 /* HEADER */
 
 header {
@@ -84,5 +90,38 @@ nav a:hover {
   color: silver;
   border-radius: 5px;
   transition-duration: 0.75s;
-  transition-timing-function: ease-in;
+  transition-timing-function: ease-out;
+}
+
+/* BANNER */
+
+#banner {
+  border: 3px solid black;
+  padding-top: 4rem;
+}
+.banner {
+  padding: 2rem 1.5rem;
+  max-width: 60%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.banner-container {
+  width: 100%;
+  display: flex;
+  border: 2px solid green;
+}
+.banner-image{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.banner-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 40%;
+  border: 4px solid violet;
 }
