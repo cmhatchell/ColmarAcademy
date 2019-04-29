@@ -59,7 +59,6 @@ header .container {
   max-width: 100%;
 }
 
-
 .logo-text {
   font-size: 1.4rem;
 }
@@ -89,46 +88,43 @@ nav a:hover {
 }
 
 /* BANNER */
-
-#banner {
-  border: 3px solid black;
-  padding-top: 4rem;
-}
-
 .container {
   width: 100%;
   margin: 0 auto;
   border: 1px solid red;
 }
 
+.banner {
+  border: 4px solid blue;
+  display: flex;
+  padding-top: 4rem;
+}
+
 .banner-container {
+  display: flex;
+  margin: 0.5rem;
   width: 100%;
-  display: flex;
-  border: 2px solid green;
+border: 4px solid blue;
 }
 
-#banner .banner {
+.banner-container img {
   display: flex;
-  padding: 2rem 1.5rem;
-  max-width: 60%;
-  height: 100%;
-  box-sizing: border-box;
-}
-
-.column {
-display: flex;
-border: 1px solid blue;
-}
-.banner-image{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  margin: 2rem 1.5rem;
+border: 3px solid orange;
 }
 
 .banner-text {
   display: flex;
   flex-direction: column;
+  margin: 0.5rem;
+  width: 100%;
+  max-width: 35%;
+  align-items: center;
   justify-content: center;
-  max-width: 30%;
-  border: 4px solid violet;
+border: 1px solid purple;
 }
+ .column {
+   display: flex;
+   margin: 0.5rem;
+   border: 2px dotted forestgreen;
+ }
