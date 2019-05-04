@@ -35,7 +35,13 @@ p {
   font-size:
 }
 
-
+h3,
+ h4,
+ p,
+ a
+{
+  margin: 0.5rem;
+}
 
 .container {
   display: flex;
@@ -207,4 +213,43 @@ header {
 .info .content-box:last-child {
   background-color: #0288d1;
   color: #d9d9d9;
+}
+
+/* ONLINE */
+
+.online {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #d9d9d9;
+  padding: 2rem 4.5rem;
+}
+
+.title {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.online .container {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.course {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 28%;
+  margin: 1rem;
+  background-color: white;
+  border: 2px solid black;
+}
+
+.course img {
+  width: 100%;
+}
+
+.course .text {
+    padding-left: 1rem;
+    padding-bottom: 1.5rem;
 }
