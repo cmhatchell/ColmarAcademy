@@ -253,3 +253,38 @@ header {
     padding-left: 1rem;
     padding-bottom: 1.5rem;
 }
+
+/* THESIS */
+
+.thesis.container {
+  flex-direction: column;
+  padding-top: 2rem;
+}
+
+.thesis .main-image {
+  flex-direction: column;
+}
+
+.thesis .content-box:first-child {
+  background-color: #0288d1;
+  color: #d9d9d9;
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: #0288d1;
+  border-top: 2px solid black;
+}
+
+.footer {
+  display: flex;
+  flex-grow: 1;
+}
+
+.t-and-p span {
+  padding-right: 1rem;
+}
