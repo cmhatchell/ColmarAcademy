@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ColmarAcademy</title>
     <link rel="stylesheet" href="./resources/css/reset.css">
     <link rel="stylesheet" href="./resources/css/style.css">
@@ -29,13 +30,18 @@
           <span><a href="#thesis">For Companies</a></span>
           <span><a href="#">Sign in</a></span>
         </div>
+        <nav class="mobile">
+          <span><a href="#campus"><img src="resources/images/ic-on-campus.svg" alt="On campus logo"></a></span>
+          <span><a href="#online"><img src="resources/images/ic-online.svg" alt="Online logo"></a></span>
+          <span><a href="#"><img src="resources/images/ic-login.svg" alt="Login logo"></a></span>
+        </nav>
       </div>
     </header>
 
     <!-- MAIN -->
 
     <div class="banner container" >
-      <div class="main-image">
+      <div class="main-image ">
         <img src="./resources/images/banner.jpg" alt="Studying in the park">
       </div>
       <div class="banner content">
@@ -50,18 +56,24 @@
     <!-- INFORMATION -->
 
     <div class="info container" id="campus">
-      <div class="main-image">
+      <!-- Main image -->
+      <div class="main-image desktop">
         <div class="image-container">
           <img src="./resources/images/information-main.jpg" alt="Reading a Book">
         </div>
-        <h1>It doesn't hurt to keep practicing</h1>
+        <h1 >It doesn't hurt to keep practicing</h1>
         <h4> "Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, eficitur dolor consequat, tristique ligula." <br><br></h4>
         <p>Emanuel, Sr Strategist at Hiring.com</p>
       </div>
+      <!-- Content -->
       <div class="content">
+        <!-- Orientation -->
         <div class="content-box">
-          <div class="image">
+          <div class="image desktop">
             <img src="./resources/images/information-orientation.jpg" alt="Students from above">
+          </div>
+          <div class="image mobile">
+            <img src="./resources/images/information-orientation-mobile.jpg" alt="Students from above">
           </div>
           <div class="text">
             <h3>Orientation date</h3>
@@ -69,9 +81,13 @@
             <a href="#">Read more</a>
           </div>
         </div>
+        <!-- Campus -->
         <div class="content-box">
-          <div class="image">
+          <div class="image desktop">
             <img src="./resources/images/information-campus.jpg" alt="Study Hall">
+          </div>
+          <div class="image mobile">
+            <img src="./resources/images/information-campus-mobile.jpg" alt="Guest Speaker image">
           </div>
           <div class="text">
             <h3>Our campus</h3>
@@ -79,9 +95,13 @@
             <a href="#">Read more</a>
           </div>
         </div>
+        <!-- Guest -->
         <div class="content-box">
-          <div class="image">
+          <div class="image desktop">
             <img src="./resources/images/information-guest-lecture.jpg" alt="Guest Speaker image">
+          </div>
+          <div class="image mobile">
+            <img src="./resources/images/information-guest-lecture-mobile.jpg" alt="Guest Speaker image">
           </div>
           <div class="text">
             <h3>Our guest lecture</h3>
@@ -89,6 +109,7 @@
             <a href="#">Read more</a>
           </div>
         </div>
+
       </div>
     </div>
 
@@ -98,7 +119,7 @@
       <div class="title">
         <h1>START LEARNING</h1>
       </div>
-      <div class="container">
+      <div class="container desktop">
         <!-- Software -->
         <div class="course">
           <img src="./resources/images/course-software.jpg" alt="Dual Monitoring">
@@ -154,6 +175,30 @@
           </div>
         </div>
       </div>
+
+      <!-- Mobile -->
+
+      <div class="container mobile">
+        <div class="crsbutton">
+          Software engineering
+        </div>
+        <div class="mobile-button">
+          Computer art
+        </div>
+        <div class="mobile-button">
+          Design
+        </div>
+        <div class="mobile-button">
+          Data
+        </div>
+        <div class="mobile-button">
+          Business
+        </div>
+        <div class="mobile-button">
+          Marketing
+        </div>
+      </div>
+
     </div>
 
     <!-- THESIS -->
@@ -166,10 +211,10 @@
         <div class="main-image">
           <video src="./resources/videos/thesis.mp4" poster="posterimage.jpg" controls>
           </video>
-          <h3>Reimagine urban</h3>
-          <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, eficitur dolor consequat, tristique ligula."</p>
+          <h3 class="desktop">Reimagine urban</h3>
+          <p class="desktop">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, eficitur dolor consequat, tristique ligula."</p>
         </div>
-        <div class="content">
+        <div class="content desktop">
           <div class="content-box">
             <div class="image">
               <img src="./resources/images/thesis-fisma.jpg" alt="Papers on a desk">
