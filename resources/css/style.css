@@ -5,7 +5,7 @@ html  {
 }
 
 body {
-  font-family: "merriweather" "Rubik", sans-serif;
+  font-family: "merriweather", sans-serif;
   margin: 0;
   line-height: 1.4;
 }
@@ -105,8 +105,6 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 0 1rem;
-  z-index: 1;
-  margin-right: : 0 1.5rem;
   background-color: #0288d1;
   border-bottom: 1px solid black;
 }
@@ -317,7 +315,6 @@ footer {
     background-color: #d9d9d9;
     transition-duration: 0.5s;
     transition-timing-function: ease-out;
-
   }
 
   .nav .desktop {
@@ -407,19 +404,127 @@ footer {
 @media only screen and ( max-width: 650px ){
 
   .desktop {
-      display: none;
-  }
-  
-  .container {
-      flex-direction: column;
-  }
-
-}
-
-@media only screen and ( max-width: 500px ){
-
-  .nav .desktop {
     display: none;
   }
 
+  .mobile {
+    display: flex;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .main-image {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-box img {
+    height: auto;
+  }
+
+  .content h1 {
+    font-size: 2.25rem;
+    margin: 1rem;
+  }
+
+  .content h2 {
+    margin: 1rem;
+  }
+
+  .btn {
+    margin: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .banner .content {
+    width: 100%;
+    padding-left: 1rem;
+  }
+
+  .banner h1, .banner h2 {
+    text-align: left;
+  }
+
+  .banner h1 {
+    font-size: 3rem;
+  }
+
+  .banner a {
+    padding: 0.5rem 4rem;
+    width: 80%;
+  }
+  /* Mobile Info Section */
+  .info .mobile {
+    margin-right: 2rem;
+  }
+  .info .main-image {
+    display: none;
+  }
+
+  .info .content {
+    padding: 0;
+    margin-bottom: 2rem;
+    flex-direction: column;
+  }
+
+  .info .content-box {
+    padding: 0;
+    margin: 0;
+  }
+
+  .info .content-box .image {
+    max-width: 90%;
+    padding-top: 1rem;
+  }
+
+  .info .text {
+    width: 100%;
+    margin: 0 1rem 1rem 1rem;
+  }
+
+  .text h3, .text h4, .text p, .info a {
+    margin: 0.5rem 2rem;
+  }
+
+  .online .container {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+  }
+
+  .online .mobile-btn {
+    background: #0288d1;
+    color: #d9d9d9;
+    padding: 1rem 1rem 1.5rem 1rem;
+    margin-bottom: .5rem;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid black;
+  }
+
+  .online .mobile-btn:hover {
+    color: black;
+    background-color:white;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+  }
+
+  /* Mobile Thesis Section */
+
+  .thesis .content-box {
+    margin: 0 0 1.5rem 0;
+  }
+
+  /* Mobile Footer Section */
+
+
+  footer span {
+    padding: 0.25rem;
+  }
+  .t-and-p {
+    display: none;
+  }
 }
